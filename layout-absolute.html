@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Layout Absolute</title>
+    <style>
+        
+        html {
+            -webkit-box-sizing:border-box;
+            -moz-box-sizing:border-box;
+            box-sizing:border-box;  
+        }
+        *,*:before, *a:after {
+            -webkit-box-sizing:inherit;
+            -moz-box-sizing:inherit;
+            box-sizing:inherit;
+        }
+        #container {
+            position:relative;
+            margin:0 auto;
+            width:800px;
+        }
+        header {
+            background-color:orange;
+            position:absolute;
+            left:0;
+            top:0;
+            width:800px;
+            height:150px;
+        }
+        aside {
+            background-color:yellow;
+            position:absolute;
+            left:0;
+            top:150px;
+            width:200px;
+            height:500px;
+        }
+        section {
+            background-color:aqua;
+            position:absolute;
+            left:200px;
+            top:150px;
+            width:600px;
+            height:500px;
+        }
+        footer {
+            background-color:orange;
+            position:absolute;
+            left:0px;
+            top:650px;
+            width:800px;
+            height:150px;
+        }
+    </style>
+    </head>
+    <body>
+        <div id="container">
+            <header>This is my header. This is my header. This is my header. This is my header. This is my header. This is my header.</header>
+            
+            <aside>This is my side bar. <br> 
+            This is my side bar. <br> 
+            This is my side bar. <br> This is my side bar. <br> 
+            This is my side bar. <br>
+            </aside>
+            
+            <section>This is my section. This is my section. This is my section. This is my section. This is my section.</section>
+            
+            <footer>
+            Here is my footer.
+            </footer>
+        
+        </div>
+    </body>
+</html>
